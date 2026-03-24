@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JV Travels Sri Lanka</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif;}
+
+body{background:#0f172a;color:white;scroll-behavior:smooth;}
+
+/* NAV */
+nav{
+display:flex;justify-content:space-between;
+padding:20px 50px;
+position:fixed;width:100%;
+background:rgba(0,0,0,0.6);z-index:1000;
+}
+nav h1{color:#38bdf8;}
+nav a{color:white;margin-left:20px;text-decoration:none;}
+
+/* HERO */
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+background-size:cover;
+display:flex;align-items:center;justify-content:center;
+text-align:center;
+}
+.hero h1{font-size:60px;}
+.hero p{margin:20px 0;}
+.btn{
+background:#38bdf8;color:black;
+padding:12px 25px;border:none;border-radius:25px;
+cursor:pointer;
+}
+
+/* SECTION */
+.section{padding:80px 50px;text-align:center;}
+.cards{
+display:flex;gap:20px;flex-wrap:wrap;
+justify-content:center;margin-top:30px;
+}
+.card{
+background:#1e293b;padding:20px;
+border-radius:15px;width:300px;
+transition:0.3s;
+}
+.card:hover{transform:scale(1.05);}
+.card img{width:100%;border-radius:10px;}
+
+/* REVIEWS */
+.review{
+background:#1e293b;
+padding:20px;border-radius:15px;
+width:300px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+position:fixed;
+bottom:20px;right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:20px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+background:#020617;
+padding:30px;text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h1>JV Travels</h1>
+<div>
+<a href="#">Home</a>
+<a href="#tours">Tours</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h1>Explore Sri Lanka</h1>
+<p>Luxury Tours • Trusted Guides • Best Prices</p>
+<button class="btn" onclick="scrollToTours()">View Tours</button>
+</div>
+</section>
+
+<!-- TOURS -->
+<section class="section" id="tours">
+<h2>Tour Packages</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3">
+<h3>Ella Adventure</h3>
+<p>2 Days / 1 Night</p>
+<p>$120 per person</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596436889106-be35e843f974">
+<h3>Sigiriya Tour</h3>
+<p>1 Day Trip</p>
+<p>$80 per person</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34">
+<h3>Mirissa Beach</h3>
+<p>Relax & Whale Watching</p>
+<p>$150 per person</p>
+</div>
+
+</div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section" id="reviews">
+<h2>Customer Reviews ⭐</h2>
+
+<div class="cards">
+
+<div class="review">
+<p>"Amazing experience! Highly recommend JV Travels!"</p>
+<h4>- John (UK)</h4>
+</div>
+
+<div class="review">
+<p>"Best trip in Sri Lanka, very professional service."</p>
+<h4>- Maria (Germany)</h4>
+</div>
+
+<div class="review">
+<p>"Friendly guide and great prices!"</p>
+<h4>- Alex (Australia)</h4>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+<p>WhatsApp: +94 78 556 2344</p>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/94785562344" class="whatsapp">💬</a>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 JV Travels Sri Lanka | All Rights Reserved</p>
+</footer>
+
+<script>
+function scrollToTours(){
+document.getElementById("tours").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
